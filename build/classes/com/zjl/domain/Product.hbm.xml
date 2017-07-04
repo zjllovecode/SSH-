@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zjl.domain.Product" table="product">
+      <id name="pid" type="int">
+            <column name="pid" />
+          <generator class="native"></generator>
+       </id>
+        <property name="pname" type="java.lang.String" length="20">
+            <column name="pname" />
+        </property>
+      <property name="price" type="java.lang.String">
+            <column name="price" />
+        </property>	
+	</class>
+</hibernate-mapping>
